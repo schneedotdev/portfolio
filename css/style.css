@@ -89,6 +89,28 @@ h1, h2, h3, h4, h5, h6 {
 #contact {
     color: white;
     padding: 1rem 2rem;
-    background: dodgerblue;
+    background: linear-gradient(45deg, #00c9a0, #019df7);
     border-radius: .5rem;
+}
+
+
+/*
+----------------- Footer -----------------
+*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 2rem;
+}
+
+.page-author {
+    font-size: 1.2rem;
+}
+
+.author {
+    font-weight: 700;
+    color: dodgerblue;
 }
