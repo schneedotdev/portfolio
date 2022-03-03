@@ -32,19 +32,63 @@ a {
 
 li {
     list-style: none;
+    font-family: 'Oxygen', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
-    margin: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
 }
 
+.spacing {
+    margin: 0 6rem;
+}
 
 /*
 ================= Layout =================
 */
 
+.nav-list,
+.inner-list {
+    display: flex;
+}
 
+.nav-list {
+    justify-content: space-between;
+}
+.inner-list {
+    justify-content: flex-end;
+}
 
 /*
 ================= Additional =================
 */
+
+/*
+----------------- Header -----------------
+*/
+
+.primary-header {
+    margin-top: 2rem;
+}
+
+/* - - - - - - nav - - - - - - */
+
+
+.nav-list li {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 2rem;
+}
+
+#home {
+    font-weight: 700;
+    padding-left: 1rem;
+    border-left: .3rem solid dodgerblue;
+}
+
+#contact {
+    color: white;
+    padding: 1rem 2rem;
+    background: dodgerblue;
+    border-radius: .5rem;
+}
