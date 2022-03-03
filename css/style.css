@@ -1,0 +1,50 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+================= Base Styles =================
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, .book-text, .button-text {
+    margin: 0;
+}
+
+
+/*
+================= Layout =================
+*/
+
+
+
+/*
+================= Additional =================
+*/
