@@ -101,16 +101,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .inner-list li {
     padding: 0 2rem;
+    animation: padding 4s;
+}
+
+@keyframes padding {
+    0% {
+        padding: 0 2.5rem;
+    }
+
+    100% {
+        padding: 0 2rem;
+    }
 }
 
 .inner-list li:last-child {
     padding-right: 0;
 }
 
-#home {
+#work-with-me {
     font-weight: 700;
     padding-left: 1rem;
-    border-left: .3rem solid dodgerblue;
+    border-left: .3rem solid #019df7;
+}
+
+#with-one {
+    animation: color-change ease-out 3s;
+}
+
+#with-two {
+    animation: color-change ease-out 4.5s;
+}
+
+#with-three {
+    animation: color-change ease-out 6s;
+}
+
+#with-four {
+    animation: color-change ease-out 7.5s;
+}
+
+@keyframes color-change {
+    0% {
+        color: #00c9a0;
+    }
+
+    50% {
+        color: #019df7;
+    }
+
+    100% {
+        color: #252b3a;
+    }
 }
 
 #contact {
@@ -118,8 +159,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 2rem;
     background: linear-gradient(45deg, #00c9a0, #019df7);
     border-radius: .5rem;
+    animation: grow 3s;
 }
 
+@keyframes grow {
+    0% {
+        padding: .5rem 1rem;
+        margin-left: 2rem;
+    }
+    100% {
+        padding: 1rem 2rem;
+        margin-left: 0;
+    }
+}
 /*
 ----------------- Main -----------------
 */
@@ -133,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content {
     max-width: 70%;
-    margin-top: 14rem;
+    margin: 14rem 0;
 }
 
 .main-text {
@@ -144,6 +196,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     font-size: 6rem;
     margin-bottom: 2.5rem;
+    animation: zoom-in 3s;
+}
+
+@keyframes zoom-in{
+    0% {
+        font-size: 2rem;
+    }
+
+    100% {
+        font-size: 6rem;
+    }
 }
 
 .engineer {
@@ -154,8 +217,18 @@ h1, h2, h3, h4, h5, h6 {
     color: #4f5569;
     font-weight: 400;
     font-size: 2rem;
-    max-width: 70%;
     line-height: 1.5;
+    animation: zoom-out 1s;
+}
+
+@keyframes zoom-out{
+    0% {
+        font-size: 2.1rem;
+    }
+
+    100% {
+        font-size: 2rem;
+    }
 }
 
 #circle-one,
@@ -170,19 +243,51 @@ h1, h2, h3, h4, h5, h6 {
     top: 40rem;
     left: 4%;
     width: 18rem;
+    animation: grow-one 5s;
+}
+
+@keyframes grow-one {
+    0% {
+        width: 5rem;
+    }
+
+    100% {
+        width: 18rem;
+    }
 }
 
 #circle-two {
     top: 19rem;
     left: 35%;
     width: 3rem;
+    animation: grow-two 7s;
+}
+
+@keyframes grow-two {
+    0% {
+        width: 1rem;
+    }
+
+    100% {
+        width: 3rem;
+    }
 }
 
 #circle-three {
-    /* top: 55%; */
     top: 40rem;
     left: 43%;
     width: 9rem;
+    animation: grow-three 6s;
+}
+
+@keyframes grow-three {
+    0% {
+        width: 3rem;
+    }
+
+    100% {
+        width: 9rem;
+    }
 }
 
 #discover {
@@ -191,16 +296,114 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem 2rem;
     background: linear-gradient(45deg, #00c9a0, #019df7);
     border-radius: .5rem;
+    animation: slide-in 2s;
+}
+
+@keyframes slide-in {
+    0% {
+        padding: .5rem 1rem;
+        margin-left: 5rem;
+    }
+
+    100% {
+        padding: 1rem 2rem;
+        margin-left: 0;
+    }
 }
 
 /* - - - - - main image - - - - - */
 
 .me {
-    /* width: 25rem; */
-    width: 40rem;
+    width: 42rem;
     border-radius: 2rem;
-    /* border-radius: 10%; */
-    /* border-radius: 50%; */
+    animation: enlarge 3.5s;
+}
+
+@keyframes enlarge{
+    0% {
+        width: 20rem;
+    }
+
+    100% {
+        width: 42rem;
+    }
+}
+
+#arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 5rem;
+    top: 90%;
+    animation: direct-downward 1s infinite;
+}
+
+@keyframes direct-downward {
+    0% {
+        top: 90%;
+    }
+
+    100% {
+        top: 93%;
+    }
+}
+
+
+
+/*
+----------------- Services -----------------
+*/
+
+.services {
+    text-align: center;
+    margin: 10.2rem 0;
+    animation: position-up 5s;
+}
+
+@keyframes position-up{
+    0% {
+        margin-top: 19rem;
+    }
+
+    100% {
+        margin-top: 10.2rem;
+    }
+}
+
+.servcies-heading {
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 4rem
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-div {
+    background: white;
+    padding: 2rem;
+    max-width: 20%;
+    border-radius: 1rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    box-shadow: 1.5rem 1.5rem 6rem rgba(37,43,58, .1);
+}
+
+.service-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-p {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.icon {
+    width: 7rem;
 }
 
 /*
