@@ -51,6 +51,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
 .spacing {
     margin: 0 7%;
 }
@@ -377,8 +382,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #servcies-heading {
-    font-weight: 600;
-    font-size: 4rem;
     margin-bottom: 8rem;
     animation: service-heading-grow 3s;
 }
@@ -435,12 +438,53 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .about-container {
+    display: flex;
+    justify-content: space-around;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    /* width: 0%; */
-    height: 50rem;
-    background: linear-gradient(#99f8e6, #90d5f9);
+    /* height: 50rem; */
+    /* background: linear-gradient(#99f8e6, #90d5f9); */
     border-radius: 2rem;
+}
+
+.about-text,
+.about-image {
+    padding: 5rem;
+}
+
+.about-text {
+    flex-basis: 70%;
+}
+
+.about-image {
+    flex-basis: 30%;
+}
+
+.about-title {
+    margin-bottom: 2rem;
+}
+
+.about-info {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #4f5569;
+}
+
+.about-image {
+    text-align: center;
+}
+
+#brian-image {
+    width: 20rem;
+    border-radius: 50%;
+    border: 1rem solid white;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 /*
@@ -462,8 +506,6 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .contact-title {
-    font-weight: 600;
-    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -543,6 +585,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .line {
+    width: 80rem;
     margin-top: 3rem;
     color: #f1f6ff;
 }
