@@ -65,35 +65,48 @@
             <div class="main-button">
                 <a id="discover" href="#">Discover my work</a>
             </div>
+
+            <a href="#servcies-heading"><img id="arrow" src="assets/icons/arrow.png" alt="arrow"></a>
         </section>
 
         <div class="main-image">
             <img class="me" src="assets/images/brianschnee5.png" alt="picture of brian schnee, a software engineer">
         </div>
-
-        <img id="arrow" src="assets/icons/arrow.png" alt="arrow">
     </main>
 
     <section class="services">
-        <h2 class="servcies-heading">Services</h2>
-        <section class="services-container">
-            <div class="service-div">
+        <h2 id="servcies-heading">Services</h2>
+        <section class="services-container spacing">
+            <div class="service-div shadow">
                 <img class="icon" src="assets/icons/adjustment.png" alt="customization icon">
                 <h3 class="service-title">First Header</h3>
                 <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatem recusandae libero non placeat eius explicabo quidem minus obcaecati sequi.</p>
             </div>
-            <div class="service-div">
+            <div class="service-div shadow">
+                <img class="icon" src="assets/icons/adjustment.png" alt="customization icon">
+                <h3 class="service-title">Customizable</h3>
+                <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati iure sed
+                    accusamus? Tenetur beatae
+                    quo amet at quis deserunt ea fugiat vero eius consequatur, unde vel eos doloribus quaerat.</p>
+            </div>
+            <div class="service-div shadow">
                 <img class="icon" src="assets/icons/responsive.png" alt="responsive design icon">
                 <h3 class="service-title">Responsive Design</h3>
                 <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum ipsum? Unde, veritatis id laboriosam error magnam accusantium at? Officiis.</p>
             </div>
-            <div class="service-div">
-                <img class="icon" src="assets/icons/adjustment.png" alt="customization icon">
-                <h3 class="service-title">Customizable</h3>
-                <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati iure sed accusamus? Tenetur beatae
-                    quo amet at quis deserunt ea fugiat vero eius consequatur, unde vel eos doloribus quaerat.</p>
+            <div class="service-div shadow">
+                <img class="icon" src="assets/icons/communication.png" alt="communication icon">
+                <h3 class="service-title">Communication</h3>
+                <p class="service-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laborum ipsum? Unde,
+                    veritatis id laboriosam error magnam accusantium at? Officiis.</p>
             </div>
         </section>
+    </section>
+
+    <section class="about">
+        <div class="about-container spacing">
+
+        </div>
     </section>
 
     <section class="work">
@@ -110,12 +123,37 @@
     </section>
 
     <section class="contact">
+        <section class="container">
+            <div class="contact-heading">
+                <h2 class="contact-title">Contact</h2>
+                <p class="contact-p">Please leave your name and email, followed by a message and I will be sure to contact you as soon as possible.</p>
+            </div>
+            <form class="form spacing" action="POST" data-netlify="true">
+                <div>
+                    <div class="person">
+                        <section class="name">
+                            <label class="label" for="name">Name:</label>
+                            <input id="name-input" type="text" name="name" placeholder="Name">
+                        </section>
         
+                        <section class="email">
+                            <label class="label" for="email">Email:</label>
+                            <input id="email-input" type="email" name="email" placeholder="Email">
+                        </section>
+                    </div>
+    
+                    <section class="message">
+                        <label class="label" for="message">Message:</label>
+                        <textarea id="message-area" name="message" placeholder="Message"></textarea>
+                    </section>
+                </div>
+            </form>
+        </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <h4 class="page-author">Designed and Built by <a class="author gradient-text" href="#"><span>Brian Schnee</span></a></h4>
-    </footer>
+    </footer> -->
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>
