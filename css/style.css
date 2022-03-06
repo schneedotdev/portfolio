@@ -369,8 +369,6 @@ h2 {
     }
 }
 
-
-
 /*
 ----------------- Services -----------------
 */
@@ -440,11 +438,7 @@ h2 {
 .about-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    /* height: 50rem; */
-    /* background: linear-gradient(#99f8e6, #90d5f9); */
-    border-radius: 2rem;
+    margin: 10rem 0;
 }
 
 .about-text,
@@ -462,6 +456,17 @@ h2 {
 
 .about-title {
     margin-bottom: 2rem;
+    animation: about-grow 3s;
+}
+
+@keyframes about-grow {
+    0% {
+        font-size: 2rem;
+    }
+
+    100% {
+        font-size: 4rem;
+    }
 }
 
 .about-info {
@@ -479,12 +484,41 @@ h2 {
     border-radius: 50%;
     border: 1rem solid white;
     margin-bottom: 2rem;
+    animation: turn-in 3s;
 }
+
+@keyframes turn-in {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.about-image-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 
 .logo {
     margin: 0 1rem;
     width: 3rem;
     height: 3rem;
+}
+
+/*
+----------------- Work -----------------
+*/
+
+
+.work-container {
+    height: 50rem;
+    background: linear-gradient(#99f8e6, #90d5f9);
+    border-radius: 2rem;
+    margin: 10rem 0;
 }
 
 /*
