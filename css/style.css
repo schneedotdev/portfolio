@@ -43,6 +43,10 @@ a, p, li, label, input::placeholder, textarea::placeholder {
     font-family: 'Oxygen', sans-serif;
 }
 
+::placeholder {
+    font-size: 1.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -447,8 +451,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     background: #252b3a;
-    color: white;
-    padding: 4rem 0;
+    color: #f1f6ff;
+    padding-top: 4rem;
 }
 
 /* - - - - - title - - - - - */
@@ -465,6 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-p {
     font-size: 1.5rem;
+    line-height: 1.5;
     max-width: 60%;
     margin: 2rem auto 4rem auto;
 }
@@ -473,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 /* - - - - - form - - - - - */
 
 .form {
-    margin: 0;
+    margin: 0 auto;
     width: 80rem;
 }
 
@@ -491,7 +496,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .message {
@@ -501,6 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .label {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #name-input,
@@ -509,7 +515,50 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
 }
 
+#name-input:focus,
+#email-input:focus,
+#message-area:focus {
+    outline: none;
+    border:1px solid #00c9a0;
+    box-shadow: 0 0 1rem #019df7;
+    color: #252b3a;
+}
+
 #message-area {
     min-height: 20rem;
     max-height: 20rem;
+
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.submit {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 4rem;
+    background: linear-gradient(45deg, #00c9a0, #019df7);
+    border-radius: .5rem;
+    border: 0;
+    margin-top: 3rem;
+}
+
+.line {
+    margin-top: 3rem;
+    color: #f1f6ff;
+}
+
+/*
+----------------- Footer -----------------
+*/
+
+.footer {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #252b3a;
+    padding: 2rem 0;
+}
+
+.page-author {
+    color: #f1f6ff;
 }
