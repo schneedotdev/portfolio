@@ -380,7 +380,7 @@ h2 {
 }
 
 #servcies-heading {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     animation: service-heading-grow 3s;
 }
 
@@ -513,12 +513,29 @@ h2 {
 ----------------- Work -----------------
 */
 
+.work {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
 
 .work-container {
-    height: 50rem;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(#99f8e6, #90d5f9);
     border-radius: 2rem;
-    margin: 10rem 0;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+.row {
+    display: flex;
+}
+
+.project {
+    border-radius: 2rem;
+    width: 100%;
+    padding: 1rem;
 }
 
 /*
