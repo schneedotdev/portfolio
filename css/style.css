@@ -412,7 +412,7 @@ h2 {
     background: white;
     padding: 2rem;
     max-width: 21%;
-    border-radius: 1rem;
+    border-radius: .7rem;
     min-height: 32rem;
 }
 
@@ -515,17 +515,17 @@ h2 {
 
 .work {
     text-align: center;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .work-container {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#99f8e6, #90d5f9);
-    border-radius: 2rem;
+    background: rgba(37, 43, 56, 0.1);
+    border-radius: 1rem;
     padding: 1rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .row {
@@ -533,10 +533,112 @@ h2 {
 }
 
 .project {
-    border-radius: 2rem;
     width: 100%;
-    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
 }
+
+/*
+----------------- Proficiencies -----------------
+*/
+
+.proficiencies {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.proficiency-heading {
+    margin-bottom: 4rem;
+}
+
+.p-list,
+.p-list li {
+    display: flex;
+}
+
+.p-list {
+    justify-content: space-around;
+}
+
+.p-list li {
+    flex-direction: column;
+}
+
+.p-logo {
+    width: 10rem;
+}
+
+
+
+/* .columns-container,
+.column,
+.column-list li {
+    display: flex;
+}
+
+.columns-container {
+    justify-content: center;
+    border: .1rem solid #252b3a;
+    border-radius: 1rem;
+    background: white;
+}
+
+.middle-div {
+    border-left: .1rem solid #252b3a;
+    border-right: .1rem solid #252b3a;
+    height: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-div {
+    padding: 2rem;
+}
+
+.column-title {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.column-info {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.column-list li {
+    align-items: center;
+}
+
+.p-logo {
+    width: 4rem;
+} */
+
+/* .p-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p-logo {
+    width: 10rem;
+}
+
+.proficiency-info {
+    font-size: 2rem;
+}
+
+.margin-right {
+    margin-right: 2rem;
+} */
+
 
 /*
 ----------------- Contact -----------------
@@ -548,6 +650,7 @@ h2 {
     background: #252b3a;
     color: #f1f6ff;
     padding-top: 4rem;
+    border-top: 3rem solid #3c4453;
 }
 
 /* - - - - - title - - - - - */
