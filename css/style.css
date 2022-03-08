@@ -412,7 +412,7 @@ h2 {
     background: white;
     padding: 2rem;
     max-width: 21%;
-    border-radius: .7rem;
+    border-radius: .8rem;
     min-height: 32rem;
 }
 
@@ -438,6 +438,7 @@ h2 {
 .about-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 10rem 0;
 }
 
@@ -524,7 +525,8 @@ h2 {
     flex-direction: column;
     background: rgba(37, 43, 56, 0.1);
     border-radius: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1%;
     margin-top: 4rem;
 }
 
@@ -534,7 +536,8 @@ h2 {
 
 .project {
     width: 100%;
-    margin: 1rem;
+    /* margin: 1rem; */
+    margin: 1%;
     border-radius: 1rem;
 }
 
