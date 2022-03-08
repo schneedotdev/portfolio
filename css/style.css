@@ -515,8 +515,8 @@ h2 {
 
 .work {
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    /* margin-top: 3rem; */
+    margin-bottom: 15rem;
 }
 
 .work-container {
@@ -543,8 +543,8 @@ h2 {
 */
 
 .proficiencies {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    /* margin-top: 8rem; */
+    margin-bottom: 15rem;
     text-align: center;
 }
 
@@ -567,9 +567,12 @@ h2 {
 
 .p-logo {
     width: 10rem;
+    opacity: .6;
 }
 
-
+.p-span {
+    color: #019df7;
+}
 
 /* .columns-container,
 .column,
