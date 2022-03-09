@@ -535,7 +535,8 @@ h2 {
 }
 
 .project {
-    /* width: 100%; */
+    width: 33%;
+    overflow: hidden;
     /* margin: 1rem; */
     margin: 1%;
     border-radius: 1rem;
