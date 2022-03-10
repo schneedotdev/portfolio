@@ -534,11 +534,14 @@ h2 {
     display: flex;
 }
 
-.project {
+.row-link {
     width: 33%;
     overflow: hidden;
-    /* margin: 1rem; */
     margin: 1%;
+}
+
+.project {
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -697,3 +700,7 @@ h2 {
 .page-author {
     color: #f1f6ff;
 }
+
+/*
+----------------- Media Queries -----------------
+*/
