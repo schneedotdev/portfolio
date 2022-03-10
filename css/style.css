@@ -540,11 +540,6 @@ h2 {
     margin: 1%;
 }
 
-.row-link {
-    width: 33%;
-    overflow: hidden;
-}
-
 .project {
     width: 100%;
     height: 100%;
@@ -567,8 +562,32 @@ h2 {
 }
 
 .overlay:hover {
-    background: linear-gradient(180deg, transparent 10%, #252b3a);
+    background: rgba(37,43,58, .8);
     color: white;
+}
+
+.overlay-button {
+    color: transparent;
+}
+
+.overlay:hover * {
+    color: white;
+}
+
+.overlay-title {
+    font-size: 3rem;
+    margin: 20% 0 5% 0;
+}
+
+.overlay:hover .overlay-button {
+    font-size: 1.5rem;
+    padding: 1% 2%;
+    border: .2rem solid #019df7;
+    border-radius: .5rem;
+}
+
+.overlay:hover .green {
+    border-color: #00c9a0;
 }
 /*
 ----------------- Proficiencies -----------------
