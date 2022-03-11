@@ -413,7 +413,7 @@ h2 {
     padding: 2rem;
     max-width: 21%;
     border-radius: .8rem;
-    min-height: 32rem;
+    min-height: 28rem;
 }
 
 .service-title {
@@ -580,7 +580,7 @@ h2 {
 }
 
 .overlay:hover .overlay-button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1% 2%;
     border: .2rem solid #019df7;
     border-radius: .5rem;
@@ -748,3 +748,123 @@ h2 {
 /*
 ----------------- Media Queries -----------------
 */
+
+/* animation */
+@media screen and (min-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 1099px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+
+    /* spacings */
+    .about-text {
+        padding: 0;
+    }
+    .work,
+    #proficiencies {
+        margin-bottom: 5rem;
+    }
+
+    /* services section */
+
+    .service-div {
+        min-height: 24rem;
+    }
+    .icon {
+        width: 5rem;
+    }
+    .service-title {
+        font-size: 1.5rem;
+    }
+    .service-p {
+        font-size: 1rem;
+    }
+
+    /* about section */
+
+    .about-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .break {
+        display: none;
+    }
+
+    /* work section */
+
+    .column-container {
+        padding-right: 3%;
+    }
+
+    .row-container {
+        flex-direction: column;
+    }
+    .row {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .nav-list {
+        justify-content: center;
+    }
+
+    .inner-list li {
+        padding: 0 1rem;
+    }
+
+    .mobile-disapear {
+        display: none;
+    }
+
+    .form,
+    .line {
+        width: 80%;
+    }
+    .footer {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /* proficiencies */
+    .p-logo {
+        width: 6rem;
+    }
+
+
+    /* form */
+    .name,
+    .email {
+        width: 100%;
+    }
+
+    .email {
+        margin-top: 1rem;
+    }
+
+    .person {
+        flex-direction: column;
+    }
+    .submit {
+        width: 100%;
+    }
+
+    .contact-p,
+    .page-author {
+        max-width: 80%;
+    }
+
+    .page-author {
+        margin: 0 auto;
+    }
+}
