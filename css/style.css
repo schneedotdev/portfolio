@@ -755,7 +755,7 @@ h2 {
 }
 
 @media screen and (min-width: 1400px) {
-    .services {
+    #services {
         margin-top: 5rem;
     }
 }
