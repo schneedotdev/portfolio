@@ -806,6 +806,10 @@ h2 {
             font-size: 4rem;
         }
     }
+
+    .appear {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -869,8 +873,14 @@ h2 {
     #circle-two,
     #circle-three,
     #arrow,
-    .hide-mobile {
+    .hide-mobile,
+    .disappear {
         display: none;
+    }
+
+    .appear {
+        display: inline-block;
+        color: white;
     }
 
     /* services section */
