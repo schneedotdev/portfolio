@@ -830,6 +830,10 @@ h2 {
         padding-bottom: 3rem;
     }
 
+    .gradient-text {
+        background-attachment: initial; /* to fix dissapearing text */
+    }
+
     .info-break {
         display: none;
     }
