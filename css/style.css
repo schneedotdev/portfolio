@@ -828,6 +828,10 @@ h2 {
         font-size: 4rem;
     }
 
+    .info-break {
+        display: none;
+    }
+
     .main-button {
         text-align: center;
     }
@@ -838,7 +842,7 @@ h2 {
     }
 
     .me {
-        width: 20rem;
+        width: 15rem;
     }
 
     #circle-one,
