@@ -336,17 +336,6 @@ h2 {
 .me {
     width: 42rem;
     border-radius: 2rem;
-    animation: enlarge 3.5s;
-}
-
-@keyframes enlarge{
-    0% {
-        width: 20rem;
-    }
-
-    100% {
-        width: 42rem;
-    }
 }
 
 #arrow {
@@ -744,15 +733,28 @@ h2 {
         animation: service-heading-grow 3s;
     }
 
-
     @keyframes service-heading-grow {
-    0% {
-        font-size: 2rem;
+        0% {
+            font-size: 2rem;
+        }
+        100% {
+            font-size: 4rem;
+        }
     }
-    100% {
-        font-size: 4rem;
+
+    .me {
+        animation: enlarge 3.5s;
     }
-}
+
+    @keyframes enlarge{
+        0% {
+            width: 20rem;
+        }
+
+        100% {
+            width: 42rem;
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -766,10 +768,6 @@ h2 {
         font-size: 2.5rem;
     }
 
-    .about-title {
-        font-size: 3rem;
-    }
-
     /* spacings */
     .about-text {
         padding: 0;
@@ -777,6 +775,40 @@ h2 {
     .work,
     #proficiencies {
         margin-bottom: 5rem;
+    }
+
+    /* main */
+
+    .main {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .main-content {
+        margin: 2rem 0 0 0;
+        max-width: none;
+    }
+    .main-text {
+        text-align: center;
+    }
+    .main-button {
+        text-align: center;
+    }
+
+
+    .main-image {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .me {
+        width: 20rem;
+    }
+
+
+     #arrow {
+        display: none;
     }
 
     /* services section */
@@ -795,6 +827,10 @@ h2 {
     }
 
     /* about section */
+
+    .about-title {
+        font-size: 3rem;
+    }
 
     .about-container {
         flex-direction: column-reverse;
@@ -816,10 +852,6 @@ h2 {
     }
     .row {
         width: 100%;
-    }
-
-    #arrow {
-        display: none;
     }
 }
 
