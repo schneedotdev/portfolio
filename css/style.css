@@ -60,10 +60,9 @@ h2 {
     margin: 0 7%;
 }
 
-.gradient-text {
+/* .gradient-text {
     background-image: linear-gradient(135deg, #019df7, #00c9a0);
     background-size: 100%;
-    background-attachment: initial; /* potentially remove! ! ! ! */
     background-repeat: repeat;
     background-clip: text;
 
@@ -71,6 +70,24 @@ h2 {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+} */
+
+.gradient-text {
+  background-image: linear-gradient(135deg, #019df7, #00c9a0);
+  
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  
+  background-repeat: repeat;
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .shadow {
