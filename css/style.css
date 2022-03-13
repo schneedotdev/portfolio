@@ -114,29 +114,12 @@ h2 {
 
 .inner-list li {
     padding: 0 2rem;
-    animation: padding 4s;
-}
-
-@keyframes padding {
-    0% {
-        padding: 0 2.5rem;
-    }
-
-    100% {
-        padding: 0 2rem;
-    }
 }
 
 .inner-list li:last-child {
     padding-right: 0;
-    animation: remove-right 4s;
 }
 
-@keyframes remove-right {
-    100% {
-        padding-right: 0;
-    }
-}
 
 #work-with-me {
     font-weight: 700;
@@ -144,53 +127,11 @@ h2 {
     border-left: .3rem solid #019df7;
 }
 
-#with-one {
-    animation: color-change ease-out 3s;
-}
-
-#with-two {
-    animation: color-change ease-out 4.5s;
-}
-
-#with-three {
-    animation: color-change ease-out 6s;
-}
-
-#with-four {
-    animation: color-change ease-out 7.5s;
-}
-
-@keyframes color-change {
-    0% {
-        color: #00c9a0;
-    }
-
-    50% {
-        color: #019df7;
-    }
-
-    100% {
-        color: #252b3a;
-    }
-}
-
 #contact-button {
     color: white;
     padding: 1rem 2rem;
     background: linear-gradient(45deg, #00c9a0, #019df7);
     border-radius: .5rem;
-    animation: grow 3s;
-}
-
-@keyframes grow {
-    0% {
-        padding: .5rem 1rem;
-        margin-left: 2rem;
-    }
-    100% {
-        padding: 1rem 2rem;
-        margin-left: 0;
-    }
 }
 /*
 ----------------- Main -----------------
@@ -217,17 +158,6 @@ h2 {
     font-weight: 700;
     font-size: 6rem;
     margin-bottom: 2.5rem;
-    animation: zoom-in 3s;
-}
-
-@keyframes zoom-in{
-    0% {
-        font-size: 2rem;
-    }
-
-    100% {
-        font-size: 6rem;
-    }
 }
 
 .engineer {
@@ -239,17 +169,6 @@ h2 {
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.5;
-    animation: zoom-out 1s;
-}
-
-@keyframes zoom-out{
-    0% {
-        font-size: 2.1rem;
-    }
-
-    100% {
-        font-size: 2rem;
-    }
 }
 
 #circle-one,
@@ -264,50 +183,18 @@ h2 {
     top: 40rem;
     left: 4%;
     width: 18rem;
-    animation: grow-one 5s;
-}
-
-@keyframes grow-one {
-    0% {
-        width: 5rem;
-    }
-    100% {
-        width: 18rem;
-    }
 }
 
 #circle-two {
     top: 19rem;
     left: 35%;
     width: 3rem;
-    animation: grow-two 7s;
-}
-
-@keyframes grow-two {
-    0% {
-        width: 1rem;
-    }
-
-    100% {
-        width: 3rem;
-    }
 }
 
 #circle-three {
     top: 40rem;
     left: 43%;
     width: 9rem;
-    animation: grow-three 6s;
-}
-
-@keyframes grow-three {
-    0% {
-        width: 3rem;
-    }
-
-    100% {
-        width: 9rem;
-    }
 }
 
 #discover {
@@ -316,19 +203,6 @@ h2 {
     padding: 1rem 2rem;
     background: linear-gradient(45deg, #00c9a0, #019df7);
     border-radius: .5rem;
-    animation: slide-in 2s;
-}
-
-@keyframes slide-in {
-    0% {
-        padding: .5rem 1rem;
-        margin-left: 5rem;
-    }
-
-    100% {
-        padding: 1rem 2rem;
-        margin-left: 0;
-    }
 }
 
 /* - - - - - main image - - - - - */
@@ -344,17 +218,6 @@ h2 {
     transform: translate(-50%);
     width: 5rem;
     top: 90%;
-    animation: direct-downward 1s infinite;
-}
-
-@keyframes direct-downward {
-    0% {
-        top: 90%;
-    }
-
-    100% {
-        top: 93%;
-    }
 }
 
 /*
@@ -374,16 +237,6 @@ h2 {
 .services-container {
     display: flex;
     justify-content: space-between;
-    animation: bring-together 3s;
-}
-
-@keyframes bring-together {
-    0% {
-        margin: 0 1%;
-    }
-    100% {
-        margin: 0 7%;
-    }
 }
 
 .service-div {
@@ -435,17 +288,6 @@ h2 {
 
 .about-title {
     margin-bottom: 2rem;
-    animation: about-grow 3s;
-}
-
-@keyframes about-grow {
-    0% {
-        font-size: 2rem;
-    }
-
-    100% {
-        font-size: 4rem;
-    }
 }
 
 .about-info {
@@ -728,11 +570,198 @@ h2 {
 */
 
 /* animation */
-@media screen and (min-width: 1100px) {
+@media only screen and (min-width: 1100px) {
+    /* header */
+    #with-one {
+        animation: color-change ease-out 3s;
+    }
+
+    #with-two {
+        animation: color-change ease-out 4.5s;
+    }
+
+    #with-three {
+        animation: color-change ease-out 6s;
+    }
+
+    #with-four {
+        animation: color-change ease-out 7.5s;
+    }
+
+    @keyframes color-change {
+        0% {
+            color: #00c9a0;
+        }
+
+        50% {
+            color: #019df7;
+        }
+
+        100% {
+            color: #252b3a;
+        }
+    }
+
+    .inner-list li {
+        animation: padding 4s;
+    }
+    @keyframes padding {
+        0% {
+            padding: 0 2.5rem;
+        }
+
+        100% {
+            padding: 0 2rem;
+        }
+    }
+
+    .inner-list li:last-child {
+        animation: remove-right 4s;
+    }
+    @keyframes remove-right {
+        100% {
+            padding-right: 0;
+        }
+    }
+
+    #contact-button {
+        animation: grow 3s;
+    }
+    @keyframes grow {
+        0% {
+            padding: .5rem 1rem;
+            margin-left: 2rem;
+        }
+        100% {
+            padding: 1rem 2rem;
+            margin-left: 0;
+        }
+    }
+
+    /* main */
+
+    .title {
+        animation: zoom-in 3s;
+    }
+    @keyframes zoom-in{
+        0% {
+            font-size: 2rem;
+        }
+
+        100% {
+            font-size: 6rem;
+        }
+    }
+
+    .info {
+        animation: zoom-out 1s;
+    }
+    @keyframes zoom-out{
+        0% {
+            font-size: 2.1rem;
+        }
+
+        100% {
+            font-size: 2rem;
+        }
+    }
+
+    #circle-one {
+        animation: grow-one 5s;
+    }
+    @keyframes grow-one {
+        0% {
+            width: 5rem;
+        }
+        100% {
+            width: 18rem;
+        }
+    }
+
+    #circle-two {
+        animation: grow-two 7s;
+    }
+    @keyframes grow-two {
+        0% {
+            width: 1rem;
+        }
+
+        100% {
+            width: 3rem;
+        }
+    }
+
+    #circle-three {
+        animation: grow-three 6s;
+    }
+    @keyframes grow-three {
+        0% {
+            width: 3rem;
+        }
+
+        100% {
+            width: 9rem;
+        }
+    }
+
+    #discover {
+        animation: slide-in 2s;
+    }
+    @keyframes slide-in {
+        0% {
+            padding: .5rem 1rem;
+            margin-left: 5rem;
+        }
+
+        100% {
+            padding: 1rem 2rem;
+            margin-left: 0;
+        }
+    }
+
+    .me {
+        animation: enlarge 3.5s;
+    }
+    @keyframes enlarge{
+        0% {
+            width: 20rem;
+        }
+
+        100% {
+            width: 42rem;
+        }
+    }
+
+    #arrow {
+        animation: direct-downward 1s infinite;
+    }
+    @keyframes direct-downward {
+        0% {
+            top: 90%;
+        }
+
+        100% {
+            top: 93%;
+        }
+    }
+
+    /* services */
+
+    .services-container {
+        animation: bring-together 3s;
+    }
+    @keyframes bring-together {
+        0% {
+            margin: 0 1%;
+        }
+        100% {
+            margin: 0 7%;
+        }
+    }
+
     #services-heading {
         animation: service-heading-grow 3s;
     }
-
     @keyframes service-heading-grow {
         0% {
             font-size: 2rem;
@@ -742,17 +771,18 @@ h2 {
         }
     }
 
-    .me {
-        animation: enlarge 3.5s;
+    /* about */
+    .about-title {
+        animation: about-grow 3s;
     }
 
-    @keyframes enlarge{
+    @keyframes about-grow {
         0% {
-            width: 20rem;
+            font-size: 2rem;
         }
 
         100% {
-            width: 42rem;
+            font-size: 4rem;
         }
     }
 }
@@ -780,6 +810,7 @@ h2 {
     /* main */
 
     .main {
+        margin-top: 5rem;
         justify-content: center;
         flex-direction: column-reverse;
     }
@@ -788,16 +819,20 @@ h2 {
         margin: 2rem 0 0 0;
         max-width: none;
     }
+
     .main-text {
         text-align: center;
     }
+
+    .title {
+        font-size: 4rem;
+    }
+
     .main-button {
         text-align: center;
     }
 
-
     .main-image {
-        margin-top: 4rem;
         display: flex;
         justify-content: center;
     }
@@ -806,8 +841,11 @@ h2 {
         width: 20rem;
     }
 
-
-     #arrow {
+    #circle-one,
+    #circle-two,
+    #circle-three,
+    #arrow,
+    .hide-mobile {
         display: none;
     }
 
