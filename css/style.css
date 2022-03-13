@@ -67,11 +67,9 @@ h2 {
     background-clip: text;
 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-
-    overflow: auto;
 }
 
 .shadow {
@@ -828,6 +826,8 @@ h2 {
 
     .title {
         font-size: 4rem;
+        margin-bottom: 0;
+        padding-bottom: 3rem;
     }
 
     .info-break {
