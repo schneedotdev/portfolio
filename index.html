@@ -209,7 +209,7 @@
                 <h2 class="contact-title gradient-text">Contact</h2>
                 <p class="contact-p">If you would like to work with me, please leave your name and email, followed by a message describing what I can help you create! I will respond to your message as soon as possible. For generalized inquiries, you may use this form or contact me via <a href="https://twitter.com/BrianSchneeDev"><span class="gradient-text">Twitter</span></a>. Thank you, I hope to work with you soon!</p>
             </div>
-            <form class="form" action="POST" data-netlify="true">
+            <form class="form" action="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                 <div>
                     <div class="person">
                         <section class="name">
@@ -228,6 +228,8 @@
                         <textarea id="message-area" name="message" placeholder="Enter message here" required></textarea>
                     </section>
                 </div>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <button class="submit" type="submit">Submit</button>
             </form>
