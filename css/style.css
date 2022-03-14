@@ -457,12 +457,12 @@ h2 {
     display: flex;
     justify-content: center;
     background: #252b3a;
-    width: 100%;
     color: #f1f6ff;
     padding-top: 4rem;
     border-top: 3rem solid #3c4453;
 }
 
+.contact,
 .container {
     width: 100%;
 }
