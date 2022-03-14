@@ -463,6 +463,10 @@ h2 {
     border-top: 3rem solid #3c4453;
 }
 
+.container {
+    width: 100%;
+}
+
 /* - - - - - title - - - - - */
 
  .contact-heading {
