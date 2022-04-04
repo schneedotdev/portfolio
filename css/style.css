@@ -124,6 +124,11 @@ h2 {
     padding: 0 2rem;
 }
 
+#work-with-me:hover,
+.inner-list li a:hover {
+    color: #00c9a0;
+}
+
 .inner-list li:last-child {
     padding-right: 0;
 }
