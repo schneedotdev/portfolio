@@ -84,6 +84,13 @@ h2 {
     box-shadow: 1.5rem 1.5rem 6rem rgba(37,43,58, .1);
 }
 
+.submit:hover,
+#discover:hover,
+#contact-button:hover {
+    background: linear-gradient(145deg, #00c9a0, #019df7);
+    color: rgb(245, 245, 245);
+}
+
 /*
 ================= Layout =================
 */
