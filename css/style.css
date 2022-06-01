@@ -90,6 +90,10 @@ h2 {
 	-moz-text-fill-color: transparent;
 }
 
+.gradient-link:hover {
+	border-bottom: 0.1rem solid #019df7;
+}
+
 .shadow {
 	box-shadow: 1.5rem 1.5rem 6rem rgba(37, 43, 58, 0.1);
 }
