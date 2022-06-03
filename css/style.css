@@ -458,7 +458,7 @@ h2 {
 }
 
 .p-list {
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .p-list li {
