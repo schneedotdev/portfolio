@@ -379,7 +379,7 @@ h2 {
 .row {
 	display: inline-block;
 	position: relative;
-	width: 50%;
+	width: 33%;
 	margin: 1%;
 }
 
@@ -454,19 +454,19 @@ h2 {
 .p-list,
 .p-list li {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .p-list {
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .p-list li {
 	flex-direction: column;
 }
 
-.p-logo {
-	width: 10rem;
-	opacity: 0.6;
+.p-margin-top {
+	margin-top: 2rem;
 }
 
 .p-span {
