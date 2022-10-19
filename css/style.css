@@ -117,6 +117,7 @@ h2 {
 .nav-list {
 	justify-content: space-between;
 }
+
 .inner-list {
 	justify-content: flex-end;
 }
@@ -441,6 +442,7 @@ h2 {
 .overlay:hover .overlay-button:hover {
 	background: #252b3a;
 }
+
 /*
 ----------------- Proficiencies -----------------
 */
@@ -611,6 +613,7 @@ h2 {
 
 /* animation */
 @media only screen and (min-width: 1100px) {
+
 	/* header */
 	#with-one {
 		animation: color-change ease-out 3s;
@@ -645,6 +648,7 @@ h2 {
 	.inner-list li {
 		animation: padding 4s;
 	}
+
 	@keyframes padding {
 		0% {
 			padding: 0 2.5rem;
@@ -658,6 +662,7 @@ h2 {
 	.inner-list li:last-child {
 		animation: remove-right 4s;
 	}
+
 	@keyframes remove-right {
 		100% {
 			padding-right: 0;
@@ -667,11 +672,13 @@ h2 {
 	#contact-button {
 		animation: grow 3s;
 	}
+
 	@keyframes grow {
 		0% {
 			padding: 0.5rem 1rem;
 			margin-left: 2rem;
 		}
+
 		100% {
 			padding: 1rem 2rem;
 			margin-left: 0;
@@ -683,6 +690,7 @@ h2 {
 	.title {
 		animation: zoom-in 3s;
 	}
+
 	@keyframes zoom-in {
 		0% {
 			font-size: 2rem;
@@ -696,6 +704,7 @@ h2 {
 	.info {
 		animation: zoom-out 1s;
 	}
+
 	@keyframes zoom-out {
 		0% {
 			font-size: 2.1rem;
@@ -706,7 +715,7 @@ h2 {
 		}
 	}
 
-	#circle-one {
+	/* #circle-one {
 		animation: grow-one 5s;
 	}
 	@keyframes grow-one {
@@ -757,7 +766,7 @@ h2 {
 			padding: 1rem 2rem;
 			margin-left: 0;
 		}
-	}
+	} */
 
 	/* .me {
         animation: enlarge 3.5s;
@@ -776,6 +785,7 @@ h2 {
 	#arrow {
 		animation: direct-downward 1s infinite;
 	}
+
 	@keyframes direct-downward {
 		0% {
 			top: 90%;
@@ -791,10 +801,12 @@ h2 {
 	.services-container {
 		animation: bring-together 3s;
 	}
+
 	@keyframes bring-together {
 		0% {
 			margin: 0 1%;
 		}
+
 		100% {
 			margin: 0 7%;
 		}
@@ -803,10 +815,12 @@ h2 {
 	#services-heading {
 		animation: service-heading-grow 3s;
 	}
+
 	@keyframes service-heading-grow {
 		0% {
 			font-size: 2rem;
 		}
+
 		100% {
 			font-size: 4rem;
 		}
@@ -843,6 +857,7 @@ h2 {
 	.about-text {
 		padding: 0;
 	}
+
 	.work,
 	#proficiencies {
 		margin-bottom: 5rem;
@@ -897,12 +912,15 @@ h2 {
 	.service-div {
 		min-height: 24rem;
 	}
+
 	.icon {
 		width: 5rem;
 	}
+
 	.service-title {
 		font-size: 1.5rem;
 	}
+
 	.service-p {
 		font-size: 1rem;
 	}
@@ -928,6 +946,7 @@ h2 {
 	.row-container {
 		flex-direction: column;
 	}
+
 	.row {
 		width: 100%;
 	}
@@ -950,6 +969,7 @@ h2 {
 	.line {
 		width: 80%;
 	}
+
 	.footer {
 		font-size: 1.25rem;
 	}
@@ -959,16 +979,19 @@ h2 {
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+
 	.service-div {
 		max-width: 40%;
 		margin: 2rem;
 	}
+
 	#services-heading {
 		margin: 10rem 0 2rem 0;
 	}
 }
 
 @media screen and (max-width: 700px) {
+
 	/* proficiencies */
 	.p-logo {
 		width: 6rem;
@@ -991,6 +1014,7 @@ h2 {
 	.person {
 		flex-direction: column;
 	}
+
 	.submit {
 		width: 100%;
 	}
@@ -1008,12 +1032,15 @@ h2 {
 	.services {
 		margin-bottom: 1rem;
 	}
+
 	.service-div {
 		min-width: 80%;
 	}
+
 	.service-title {
 		font-size: 2rem;
 	}
+
 	.service-p {
 		font-size: 1.5rem;
 	}
